@@ -1,0 +1,20 @@
+namespace: "gaeldb"
+name: "hpe_comware"
+version: "1.0.0"
+description: "A collection of Ansible Modules for HPE Comware"
+readme: "README.md"
+authors:
+    - HPENetworking team (https://github.com/HPENetworking/hpe-cw7-ansible)
+    - Gael D. Barbier (@gaeldb)
+dependencies: {
+    "ansible.netcommon": "*"
+}
+license:
+    - "GPL-3.0-or-later"
+tags:
+    - networking
+    - hpe
+repository: "https://github.com/gaeldb/ansible-hpe-comware"
+documentation: "https://github.com/HPENetworking/hpe-cw7-ansible"
+homepage: "https://github.com/HPENetworking/hpe-cw7-ansible"
+issues: "https://github.com/HPENetworking/hpe-cw7-ansible"
