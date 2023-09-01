@@ -4,7 +4,7 @@ version: "1.0.0"
 description: "A collection of Ansible Modules for HPE Comware"
 readme: "README.md"
 authors:
-    - HPENetworking team (https://github.com/HPENetworking/hpe-cw7-ansible)
+    - HPENetworking team (@hpe-cw7-ansible)
     - Gael D. Barbier (@gaeldb)
 dependencies: {
     "ansible.netcommon": "*"
