@@ -1,0 +1,5 @@
+ncclient==0.6.9
+scp==0.13.3
+textfsm==1.1.0
+ipaddr==2.2.0
+pyhpecw7
