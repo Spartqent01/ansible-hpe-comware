@@ -18,9 +18,6 @@ Be sure to have first installed all depedencies in the [requirements.txt](requir
 In some cases "pyhpecw7" will conflic with others pythons modules, in my case "py3hpecw7" did the job.
 
 
-# Documentation
-The [list](docs/README.md) of Ansible modules  and more detailed summary of each module can be found in [docs](docs/).  
-
 ## ansible-doc
 ansible-doc is a utility that offers users built-in "man-page-like" docs for Ansible modules.  
 This is a great command line utility to reference to understand the parameters each module supports.  
