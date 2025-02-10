@@ -46,6 +46,13 @@ options:
         default: 830
         choices: []
         aliases: []
+    timeout:
+        description:
+            - sets timeout
+        required: false
+        default: 300
+        choices: []
+        aliases: []
     hostname:
         description:
             - IP Address or hostname of the Comware 7 device that has
@@ -145,6 +152,7 @@ def main():
             command=dict(required=False, type='list'),
             file_txt=dict(required=False, type='str'),
             port=dict(default=830, type='int'),
+            timeout=dict(default=300, type='int'),
             hostname=dict(required=True),
             username=dict(required=True),
             password=dict(required=False, default=None),
@@ -160,10 +168,11 @@ def main():
     username = module.params['username']
     password = module.params['password']
     port = module.params['port']
+    timeout = module.params['timeout']
     hostname = socket.gethostbyname(module.params['hostname'])
 
     device_args = dict(host=hostname, username=username,
-                       password=password, port=port)
+                       password=password, port=port, timeout=timeout)
 
     device = HPCOM7(**device_args)
 
