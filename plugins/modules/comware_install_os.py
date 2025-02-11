@@ -52,7 +52,7 @@ options:
               this specifies whether the .ipe file is deleted from the device
               after it is unpacked.
         required: false
-        deafult: false
+        default: false
         choices: ['true', 'false', 'yes', 'no']
         aliases: []
     reboot:
@@ -221,7 +221,7 @@ def main():
 
     if ipe_package:
         ipe_basename = os.path.basename(ipe_package)
-        ipe_boot_sys = re.split('-|\.', ipe_basename)[-3:-1]
+        ipe_boot_sys = re.split(r'[-|\.]', ipe_basename)[-3:-1]
         if ipe_boot_sys:
             if ipe_boot_sys[0].lower() in existing_boot.lower()\
                     and ipe_boot_sys[0].lower() in existing_system.lower()\
